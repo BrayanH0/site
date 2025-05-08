@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: system-ui, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    margin: 0 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+  
+  .nav-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nav-top select,
+  .nav-top .contact {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  
+  /* Main */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Presentación del bus */
+  .present-bus {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: #1e1e1e;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .text-exclusiva {
+    margin: auto 30px;
+    max-width: 400px;
+    z-index: 2;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  .text-exclusiva img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .text-exclusiva h1 {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .img-bus {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .fondo-bus {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 650px;
+    height: 410px;
+    right: 60px;
+    clip-path: polygon(10% 0, 75% 0, 90% 100%, 25% 100%);
+  }
+  
+  .bus {
+    position: relative;
+    z-index: 3;
+    height: 300px;
+  }
+  
+
+  
+  /* Beneficios */
+  .beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+    background-color: #fff;
+    font-size: 2rem;
+    color: #444;
+  }
+  
+  .beneficios i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .beneficios i:hover {
+    transform: scale(1.2);
+    color: #007bff;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  
